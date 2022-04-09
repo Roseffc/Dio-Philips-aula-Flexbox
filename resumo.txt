@@ -1,0 +1,40 @@
+flex box
+foi projetado como um modelo de layot unidimensional e como metodo que pode 
+oferecer distribuicao de espaco entre itens em uma interface e recursos de alinhamento.
+
+flex container - 
+é a tag que possue itens filhos e nela aplicamos a pripriedade display flex,
+transforma seus filhos diretos em flex itens, pode ser feita em qualquer tipo de tag ou até mesmo um link
+propriedades - 
+- display - inicializador do container 
+- flex-direction - faz o direcionamento dos itens, estabelece eixos dentro do container, eixo principal que define o 
+comportamento dos outros eixos / row (da esquerda para direita), row-reverse (sentido oposto da direcao do texto)
+column (vertical de cima para baixo), column-reverse (ordenação reversa, de baixo para cima )
+- flex-wrap - quebra de linha - define ou não a quebra de linha (nowrap é o padrão e não permite a quebra de linha),
+wrap - permite a quebra de linha assim que um dos flex itens não puder mais ser compactado, (wrap-reverse - sentido 
+contrario)
+- flex-flow - abreviacao pro direction e wrap 
+- justify-content - alinha os itens de acordo com a dia direção
+- align-items - alinha os itens de acordo com seu eixo 
+- align-content - alinha as linhas do container 
+
+flex itens - filho direto do container, podem ser aplicados e se tornar um flex container tb.
+propriedades 
+- flex-grow - defini fator de crescimento
+- ----- basic - define tamanho inicial desse item antes da distribuicao do espaço restante dentro do container
+- ----shink - define a capacidade de redução 
+- flex - abreviação pra as 3 p acima 
+- order - ordem de distribuição e listagem desses itens 
+- align-self - define alinhamento de item específico do container 
+_______________________________________________________________________________________________
+
+display flex torna a tag de um elemento do flex container, assim automativamente todos os seus filhos diretos 
+dessa tag tornam-se flex items.
+
+
+
+
+
+
+
+
