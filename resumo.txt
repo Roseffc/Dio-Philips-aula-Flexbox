@@ -13,19 +13,59 @@ column (vertical de cima para baixo), column-reverse (ordenação reversa, de ba
 - flex-wrap - quebra de linha - define ou não a quebra de linha (nowrap é o padrão e não permite a quebra de linha),
 wrap - permite a quebra de linha assim que um dos flex itens não puder mais ser compactado, (wrap-reverse - sentido 
 contrario)
-- flex-flow - abreviacao pro direction e wrap 
-- justify-content - alinha os itens de acordo com a dia direção
-- align-items - alinha os itens de acordo com seu eixo 
-- align-content - alinha as linhas do container 
+- flex-flow - abreviacao pro direction e wrap - um atalho para flex-direction e flex-whap.
+- justify-content - alinha os itens de acordo com a dia direção - alinha os itens dentro do container de acordo com
+a direceao pretendida e trata da distribuicao de espacamento entre eles.(se o item ocupar 100%do container. não 
+se aplica), ele possui váriações: (flex-start: inicio do container), (flex-end -- final do C), (center-ao centro),
+(space-between-crias esp entre os elementos), (space-around-espacamentos do meio duas vezes maiores que o inicial 
+e final)
+
+
+- align-items - alinha os itens de acordo com o eixo do comtainer , o alinhamento é # quando estão em colounas 
+ou linhas - permite o alinhamento central no eixo vertical
+trata do alinhamento dos fles itens de acordo com o eixo do container.
+permite o alinhamento central no eixo vertical, não precisa ter conhecimentos da altura dos itens, 
+-center - ao centro
+-stretch - padraoc crescem igualmente
+-flex-start - alinhamento dos itens no inicio
+-flex-end - ------------- dos itens no inicio
+-baseline - ---------- de acordo com a linha base da tipografia dos itens .
+
+
+
+#align-c - aplica no container  
+
+- align-content - alinha as linhas do container - não aplica - 
+responsavel por tratar o alinhamento das linhas do container em relação ao eixo vertical do container 
+-center - ao centro
+stretch - o padrao e os itens crescem igualmente 
+-flex-start - o alinhamento dos itens no inicio 
+-flex-end - ---------- ao final
+-space-between - espacamento igual entre os elementos 
+-space-around - ----------do meio são duas vezes maiores que inicial e final 
 
 flex itens - filho direto do container, podem ser aplicados e se tornar um flex container tb.
 propriedades 
+
+
 - flex-grow - defini fator de crescimento
-- ----- basic - define tamanho inicial desse item antes da distribuicao do espaço restante dentro do container
-- ----shink - define a capacidade de redução 
-- flex - abreviação pra as 3 p acima 
-- order - ordem de distribuição e listagem desses itens 
-- align-self - define alinhamento de item específico do container 
+define a proporcionalidade de crescimento dos itens respeitando o tamanho interno 
+(não funciona se tiver adicionado o justify-content
+só trabalha com numeros 
+
+
+flex - basic - define tamanho inicial desse item antes da distribuicao do espaço restante dentro do container.
+auto, px,%,em,0
+
+flex - shrink - define a capacidade de redução de um item
+
+- flex - abreviação pra as 3 p acima - 
+
+- order - ordem de distribuição e listagem desses itens - ordenação dos itens 
+
+- align-self - define alinhamento de item específico do container, individualmente, o conteiner não pode ter 
+alig iteng definido.
+  
 _______________________________________________________________________________________________
 
 display flex torna a tag de um elemento do flex container, assim automativamente todos os seus filhos diretos 
