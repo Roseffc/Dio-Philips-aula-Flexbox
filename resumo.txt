@@ -65,7 +65,12 @@ flex - shrink - define a capacidade de redução de um item
 
 - align-self - define alinhamento de item específico do container, individualmente, o conteiner não pode ter 
 alig iteng definido.
-  
+auto - valor padrao - respeitar a definição de align items
+flex-start - ao inicio do container
+flex-end - ao final 
+center - relativo ao centro de acordo com o eixo
+stretch - ocupa todo espeçp relativo
+baseline - utiliza linha base da tipografia   
 _______________________________________________________________________________________________
 
 display flex torna a tag de um elemento do flex container, assim automativamente todos os seus filhos diretos 
